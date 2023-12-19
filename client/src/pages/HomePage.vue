@@ -6,15 +6,20 @@
       <h1 class="my-5 bg-dark text-white p-3 rounded text-center">
         AWS IS COOL!!!!
       </h1>
+
+      <button @click="count++" type="button">Click me!!! {{count}}</button>
     </div>
   </div>
 </template>
 
 <script>
+import {ref} from 'vue'
+
 export default {
   setup() {
+    const count = ref(0)
     return {
-      
+      count
     }
   }
 }
