@@ -1,8 +1,8 @@
 version: '3'
 services:
   app:
-    image: your-dockerhub-username/aws-demo-vue:latest
+    image: boisecodeworks/aws_demo:latest
     env_file:
-      - aws-demo-vue-env
+      - aws_demo-env
     ports:
       - "3000:3000"
